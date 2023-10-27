@@ -32,38 +32,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
     
-    this.groupedCities = [
-      {
-          label: 'Germany',
-          value: 'de',
-          items: [
-              { label: 'Berlin', value: 'Berlin' },
-              { label: 'Frankfurt', value: 'Frankfurt' },
-              { label: 'Hamburg', value: 'Hamburg' },
-              { label: 'Munich', value: 'Munich' }
-          ]
-      },
-      {
-          label: 'USA',
-          value: 'us',
-          items: [
-              { label: 'Chicago', value: 'Chicago' },
-              { label: 'Los Angeles', value: 'Los Angeles' },
-              { label: 'New York', value: 'New York' },
-              { label: 'San Francisco', value: 'San Francisco' }
-          ]
-      },
-      {
-          label: 'Japan',
-          value: 'jp',
-          items: [
-              { label: 'Kyoto', value: 'Kyoto' },
-              { label: 'Osaka', value: 'Osaka' },
-              { label: 'Tokyo', value: 'Tokyo' },
-              { label: 'Yokohama', value: 'Yokohama' }
-          ]
-      }
-  ];
+  
   this.countries = [
     { name: 'India', code: 'in', lang: 'hi' },
     { name: 'English', code: 'us', lang: 'en' },
@@ -77,15 +46,10 @@ export class AppComponent implements OnInit{
     { name: 'French', code: 'fr', lang: 'fr' },
     { name: 'Japan', code: 'jp', lang: 'ja' },
     { name: 'Spain', code: 'es' , lang: 'es'},
-    { name: 'Chinese', code: 'cn' , lang: 'zh-CN'},
+    { name: 'chini', code: 'cn' , lang: 'zh-CN'},
   ];
 }
 
-  
-  
-// allContries(){
-//   for(let i=1; i<=this.countries?.length; i++)
-// }
 timer(){
   setTimeout(() => {
     this.contentLoaded = true;
