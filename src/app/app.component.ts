@@ -25,7 +25,9 @@ export class AppComponent implements OnInit{
 
   @ViewChild('editor', {static: false}) editor: any;
 
-  constructor(private builder: FormBuilder){}
+  constructor(private builder: FormBuilder){
+    console.log('hello');
+  }
 
 
   ngOnInit(){
