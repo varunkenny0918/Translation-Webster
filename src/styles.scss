@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "assets/styles/flags/flags.css";
+
+// body, html {
+//     height: 100%;
+//   }
+  
+  
+
+ 
+
+.p-dropdown{
+    padding: 0;
+}
+.p-dropdown-items{
+    margin: 0;
+    padding: 0;
+    padding-left: 0 !important;
+    height: 100%;
+    /* margin-bottom: 1rem; */
+}
+.p-editor-toolbar{
+    pointer-events: none;
+    
+}
+
+
+@media (min-width: 100px) and (max-width: 770px) {
+ 
+
+    .p-dropdown{
+        min-width: 100%;
+        text-align: start;
+        margin: 10px 0;
+    }
+}
+@media (min-width: 770px) and (max-width: 1000px){
+    img{
+      overflow-y: hidden;
+    }
+    
+  }
+
+
+
+
