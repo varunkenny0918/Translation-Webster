@@ -46,7 +46,7 @@ export class AppComponent implements OnInit{
     { name: 'French', code: 'fr', lang: 'fr' },
     { name: 'Japan', code: 'jp', lang: 'ja' },
     { name: 'Spain', code: 'es' , lang: 'es'},
-    { name: 'Chinese', code: 'cn' , lang: 'zh-CN'},
+    { name: 'Chi', code: 'cn' , lang: 'zh-CN'},
   ];
 }
 
