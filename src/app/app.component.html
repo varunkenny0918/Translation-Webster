@@ -34,16 +34,18 @@ class="vh-100 text-center d-flex justify-content-center align-items-center flex-
             [lazy]="false"
             optionLabel="name"
             [filter]="false"
+            [virtualScroll]="true" 
+            [itemSize]="31"
             filterBy="name"
             [showClear]="false"
             placeholder="Select a Country"
-            class="dropdown_style"
+            class="scrollbar scrollbar-primary dropdown_style  "
             (onClick)="timer()"
           >
             <!-- style="width: 18px" -->
             <ng-template pTemplate="selectedItem">
               <div
-                class="d-flex align-items-center gap-2"
+                class="d-flex align-items-center gap-2 "
                 *ngIf="selectedCountry"
               >
               
@@ -55,10 +57,10 @@ class="vh-100 text-center d-flex justify-content-center align-items-center flex-
                 <div>{{ selectedCountry.name }}</div>
               </div>
             </ng-template>
-            <ng-template let-country pTemplate="item" >
-              <p-skeleton width="10rem" styleClass="mb-2" *ngIf="!contentLoaded"></p-skeleton>
+            <ng-template let-country pTemplate="item"  class="scrollbar scrollbar-primary">
+              <p-skeleton  width="100%" styleClass="mb-2" *ngIf="!contentLoaded"></p-skeleton>
               
-              <div class="d-flex align-items-center gap-2 transition-ease-in-out transition-delay-1000 transition-ease-out"  *ngIf="contentLoaded">
+              <div class="d-flex align-items-center gap-2 transition-ease-in-out  transition-delay-1000 transition-ease-out"  *ngIf="contentLoaded">
                 <img
                 src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
                 [class]="'flag flag-' + country.code" 
